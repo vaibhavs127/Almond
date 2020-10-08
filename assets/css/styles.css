@@ -108,6 +108,7 @@ body {
   visibility: visible;
 }
 .card .bottom-text .text {
+  color: black;
   text-align: justify;
 }
 .card .bottom-text .btn {
