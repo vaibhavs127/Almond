@@ -500,6 +500,9 @@ img {
   #res {
     display: none;
   }
+  .cont {
+    display: none;
+  }
 }
 .counting-sec {
   padding: 40px 0;
@@ -527,4 +530,10 @@ img {
   font-size: 40px;
   margin: 10 0;
   font-weight: 700;
+}
+
+.cont {
+  margin-left: 9%;
+  margin-top: 55px;
+  margin-bottom: -30px;
 }
