@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="css/style.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -25,7 +26,29 @@
     <title>ALMOND</title>
   </head>
   <body>
-	  <nav class="navbar navbar-expand-lg navbar-dark" id="navbar"  style="color: white; background-color: #2C292F;">
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>SASS</title>
+    <style>
+      .navbar-toggler{
+        background-color:  #5E5EF7;
+      }
+      .navbar-toggler-icon{
+        padding: 5px;
+      }
+      ul li a:hover{
+        background-color: #FCB430;
+        color: black;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar"  style="color: white; background-color: #5E5EF7; ">
       <button
         class="navbar-toggler"
         type="button"
@@ -35,63 +58,53 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="hover" style="color: black; font-weight: 700; font-size: 18px;" >
-          <li class="nav-item">
-            <a class="nav-link act" href="../../index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./assets/pages/about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">OUR SERVICES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./assets/pages/cards.html" target="_blank">OUR PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
-          </li>
-
-         
+        <ul class="navbar-nav mr-auto mt-2 ml-2 mt-lg-0" id="hover" style=" font-weight: 300; font-size: 20px;" >
+         <li class="nav-item">
+        <a style="color: white;" class="nav-link" href="../../index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a style="color: white;" class="nav-link" href="./assets/pages/about.html">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a style="color: white;" class="nav-link" href="#about">OUR SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a style="color: white;" class="nav-link" href="./assets/pages/cards.html" target="_blank"
+          >OUR PROJECTS</a
+        >
+      </li>
+      <li class="nav-item">
+        <a style="color: white;" class="nav-link" href="#contact">CONTACT</a>
+      </li>
+          
         </ul>
-        <a class="navbar-brand" href="#" style="text-align:right"><img src="./assets/img/logo3.png" width="50%" id="res"></a>
+        <a style="color: white;" class="navbar-brand" href="#" style="text-align:right"><img src="..//img/logo3.png" width="50%" id="res"></a>
       </div>
     </nav>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      
+    <header class="showcase">
+      <div class="c">
+        <div class="showcase-content">
+          <div>
+            <h1>Almond Group Together We Can...</h1>
+            <p class="my-1">
+              We are a group of industries successfully working in most of the sectors. We love growth and that's why rather than saying "Me" Almond says "We". It's our professional ethics to keep the clients in trust and work thoroughly for them and for us.
+            </p>
+            <a href="#" class="pb">Learn More</a>
+            <a href="#" class="sb">Contact</a>
+          </div>
+          <img
+            src="https://themesbrand.com/zooki/layouts/images/home-2-img.png"
+          />
+        </div>
+      </div>
     </header>
-    <!-- <img src="./assets/img/curve.png" width="100%" style="height: 250px;"/> -->
+<img src="./assets/img/curve3.jpg" style="height: 140px;">
 
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid back" id="home" style="height: 550px">
-        <div class="home__data">
-          <h1 class="home__title" style="text-align: center; color: black">
-            Almond Group<br /><span class="home__title-color">Together</span
-            ><br />We Can...
-          </h1>
-
-          <a
-            href="#contact"
-            class="button1"
-            id="center"
-            style="text-decoration: none"
-            >Contact</a
-          >
-        </div>
-
-        <div class="home__social"></div>
-
-        <div class="home__img">
-          <!-- <img src="assets/img/Home.jpg" alt=""> -->
-        </div>
-      </section>
-
+	 
       <!--===== Our Services =====-->
       <section class="about section" id="about">
         <h2 class="section-title">Our Services</h2>
@@ -205,28 +218,28 @@
         </div>
       </section>
 
-      <div class="middle">
+      <div class="middle ">
         <div class="counting-sec">
           <div class="inner-width">
-            <div class="col">
+            <div id="col">
               <i class="fa fa-tasks" aria-hidden="true"></i>
               <div class="num">15</div>
               <div style="font-size: 40px;">+</div>
               Projects delievered
             </div>
-            <div class="col">
+            <div id="col">
               <i class="fa fa-user-circle-o" aria-hidden="true"></i>
               <div class="num">100</div>
               <div style="font-size: 40px;">+</div>
               employees internship
             </div>
-            <div class="col">
+            <div id="col">
               <i class="fa fa-laptop" aria-hidden="true"></i>
               <div class="num">200</div>
               <div style="font-size: 40px;">+</div>
               project lead generation
             </div>
-            <div class="col">
+            <div id="col">
               <i class="fa fa-users" aria-hidden="true"></i>
               <div class="num">20</div>
               <div style="font-size: 40px;">+</div>
@@ -235,8 +248,8 @@
           </div>
         </div>
       </div>
-      <div class="cont mt-5 col d-flex justify-content-center">
-      <iframe width="1120" height="445" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+      <div class="mt-5 col d-flex justify-content-center">
+      <iframe class="cont" width="1120" height="445" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
           </iframe>
       </div>
           

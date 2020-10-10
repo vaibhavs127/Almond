@@ -1,0 +1,79 @@
+@import "config";
+@import "buttons";
+@import "mobile";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $l-color;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+.showcase {
+  @include set-background($p-color);
+  height: 690px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 15px;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    a {
+      color: set-text-color($p-color);
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    a:hover {
+      color: $s-color;
+      text-decoration: none;
+    }
+  }
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+  }
+}
+
+.c {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}

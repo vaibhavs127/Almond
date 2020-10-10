@@ -1,0 +1,42 @@
+$l-color: #f4f4f4;
+$p-color: rgb(94, 94, 247);
+// $primary-color: rgb(217, 217, 247);
+$s-color: rgb(252, 180, 48);
+
+//set text based on bg
+@function set-text-color($color) {
+  @if (lightness($color) >70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+//set background and text color
+
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+//margin and padding classes
+
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}

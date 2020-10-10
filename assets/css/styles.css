@@ -109,7 +109,7 @@ body {
 }
 .card .bottom-text .text {
   color: black;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .card .bottom-text .btn {
   margin: 10px 0;
@@ -493,15 +493,26 @@ img {
   }
 }
 
-#res {
-  float: right;
-}
-
 @media (max-width: 460px) {
   #res {
     display: none;
   }
   .cont {
+    display: none;
+  }
+  .middle {
+    display: none;
+  }
+  .inner-width {
+    display: none;
+  }
+  #col {
+    display: none;
+  }
+  #col i {
+    display: none;
+  }
+  .num {
     display: none;
   }
 }
@@ -515,7 +526,7 @@ img {
   margin: auto;
   display: flex;
 }
-.col {
+#col {
   flex: 1;
   text-align: center;
   padding: 20px;
@@ -523,7 +534,7 @@ img {
   text-transform: uppercase;
   font-size: 20px;
 }
-.col i {
+#col i {
   font-size: 40px;
   color: #4070f4;
 }
